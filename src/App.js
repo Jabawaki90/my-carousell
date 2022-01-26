@@ -7,16 +7,16 @@ function App() {
   return <Router>
     <Navbar/>
     <Switch>
-      <Route exact to = '/'>
+      <Route exact path= '/'>
         <HomePage/>
       </Route>
-      <Route exact to='/Product'>
+      <Route exact path='/product'>
         <ProductPage/>
       </Route>
-      <Route exact to='/Cart'>
+      <Route exact path='/cart'>
         <CartPage/>
       </Route>
-      <Route to='*'>
+      <Route path='*'>
         <ErrorPage/>
       </Route>
     </Switch>
